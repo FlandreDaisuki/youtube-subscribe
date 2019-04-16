@@ -97,10 +97,10 @@ services:
       # Otherwise, the default destination is ~/downloads and
       #   default ytsub_dir is ~/.youtube-subscribe
       - ../conf.json:/ytsub/conf.json
-      # Following mount point should match the destination key-value
+      # Following mount point should match the value of destination key
       #   in conf file
-      - ./downloads:/root/downloads
-      # Following mount point should match the ytsub_dir key-value
+      - ./downloads:/downloads
+      # Following mount point should match the value of ytsub_dir key
       #   in conf file
       - ./subscriptions:/root/.youtube-subscribe
     environment:
