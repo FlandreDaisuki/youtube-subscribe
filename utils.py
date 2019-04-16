@@ -3,6 +3,8 @@ from os.path import (expanduser, expandvars, normpath, abspath)
 
 def print_help(*args, short=False, **kwargs):
     usage = """
+youtube-subscribe v{version}
+
 Usage:
   python3 {filename} add [--overwrite] <playlist-url>|<playlist-id>
   python3 {filename} ls [--short] [<playlist-id-matcher>]
