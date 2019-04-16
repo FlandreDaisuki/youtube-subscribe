@@ -1,0 +1,11 @@
+{
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true,
+  },
+  "python.linting.enabled": true,
+  "python.linting.lintOnSave": true,
+  "python.linting.maxNumberOfProblems": 100,
+  "python.linting.pylintEnabled": true,
+  "python.formatting.provider": "yapf",
+}

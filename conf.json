@@ -1,0 +1,8 @@
+{
+  "ytsub_dir": "~/.youtube-subscribe",
+  "destination": "/downloads",
+  "options": {
+    "output": "%(playlist)s/%(title)s.%(ext)s",
+    "format": "best"
+  }
+}

@@ -1,0 +1,12 @@
+version: "3.2"
+
+services:
+  ytsub:
+    image: youtube-subscribe
+    container_name: youtube-subscribe
+    volumes:
+      - ../conf.json:/ytsub/conf.json
+      - ./downloads:/root/downloads
+      - ./subscriptions:/root/.youtube-subscribe
+    environment:
+      - CRON_FREQ=0 * * * *
