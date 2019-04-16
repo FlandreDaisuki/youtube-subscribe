@@ -77,9 +77,9 @@ Example conf.json and docker-compose.yml
 ```json
 {
   "ytsub_dir": "~/.youtube-subscribe",
-  "destination": "/downloads",
+  "destination": "/downloads/%(playlist)s",
   "options": {
-    "output": "%(playlist)s/%(title)s.%(ext)s",
+    "output": "%(title)s.%(ext)s",
     "format": "best"
   }
 }
