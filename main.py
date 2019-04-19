@@ -6,7 +6,7 @@ import os.path as path
 import ytsub
 from utils import print_help
 
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 
 if __name__ == "__main__":
     argv = sys.argv.copy()

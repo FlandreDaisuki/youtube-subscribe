@@ -291,11 +291,16 @@ def sync_pl(pl):
 
 def compose_dl_ep_cmd(pl, ep):
     final_output = "%s/%s" % (CONF["destination"], ep["filename"])
+    final_output = final_output % {
+        "playlist": pl["title"],
+        "playlist_id": pl["id"],
+        "playlist_title": pl["title"],
+    }
 
     return [
         "youtube-dl", "--output",
         resolve_path(final_output), "--format", CONF["options"]["format"],
-        "https://www.youtube.com/watch?v=%s&list=%s" % (ep["id"], pl["id"])
+        "https://www.youtube.com/watch?v=%s" % ep["id"]
     ]
 
 
