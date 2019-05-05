@@ -1,6 +1,8 @@
 FROM python:3.7-alpine
 
-RUN apk add --no-cache youtube-dl tzdata
+RUN apk add --no-cache python3 tzdata
+
+RUN pip install --upgrade pip youtube-dl
 
 RUN mkdir -p /ytsub
 
